@@ -11,7 +11,7 @@ The automated CI/CD pipelines allow these quality tests to run each time a chang
 
 I chose the following tools for this project:
 
-- HTMLHint
+- (HTMLHint)[https://htmlhint.com/getting-started/]
 - markdownlint-cli2
 - Vale 
 - GitHub CI
@@ -25,6 +25,8 @@ How does data or content flow through the system?
 **Implementation:** 
 
 What did you configure, write, or automate?
+
+1. I installed NPM, HTMLHint
 
 **Validation:** 
 
