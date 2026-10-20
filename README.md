@@ -11,10 +11,13 @@ The automated CI/CD pipelines allow these quality tests to run each time a chang
 
 I chose the following tools for this project:
 
-- (HTMLHint)[https://htmlhint.com/getting-started/]
-- markdownlint-cli2
+- [HTMLHint](https://htmlhint.com/getting-started/)
+- [markdownlint](https://github.com/DavidAnson/markdownlint/blob/v0.41.1/README.md)
+- [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
+- [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2)
 - Vale 
 - GitHub CI
+- [pre-commit](https://pre-commit.com/)
 
 The above linting tools are all prevalent ways to complete quality checks. I wanted to include both HTML and Markdown linters since those are the two most prominent ways of publishing documentation. 
 
@@ -26,15 +29,24 @@ How does data or content flow through the system?
 
 What did you configure, write, or automate?
 
-1. I installed NPM, HTMLHint
+1. Created a **.htmlhintrc** configuration file to run quality checks on HTML files
+2. Created a configuration file for markdownlint
+3. Created a custom check rule for markdownlint-cli2
+4. Created a pre-commit script to automatically run linters before every commit
 
 **Validation:** 
 
 How did you test that it works?
+- Created a file with initial errors that violated linting rules. 
+- Ran the linter and verified the errors were being caught.
+- Fixed the errors in the html or markdown files.
+- Reran the linter and verified there were no errors being thrown. 
 
 **Results:** 
 
 What did you measure or verify?
+
+Verified that errors thrown can be automatically be caught before pushing changes to git. Reducing the chances of errors being published to Git. 
 
 **Limitations:** 
 

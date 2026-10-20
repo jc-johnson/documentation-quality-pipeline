@@ -1,0 +1,8 @@
+{
+  "label": "My Jenkins Tutorials",
+  "position": 0,
+  "link": {
+    "type": "generated-index",
+    "description": "A collection of Jenkins user guides that I wrote."
+  }
+}
