@@ -34,6 +34,7 @@ What did you configure, write, or automate?
 3. Created a custom check rule for markdownlint-cli2
 4. Created a pre-commit script to automatically run linters before every commit
 
+
 **Validation:** 
 
 How did you test that it works?
@@ -55,6 +56,12 @@ What does your evidence not establish?
 **Reproduction:**
 
 How can someone run or review the project?
+
+Install Markdownlint, markdownlint-cli, Markdown-cli2:
+
+npm install markdownlint --save-dev
+npm install -g markdownlint-cli
+npm install markdownlint-cli2 --global
 
 **Deliverable:**
 Demonstrate a failing CI job due to quality errors in documentation, followed by a passing job due to the resolved quality fixes. 
