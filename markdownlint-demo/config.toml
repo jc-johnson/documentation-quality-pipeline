@@ -3,6 +3,7 @@ no-hard-tabs = false
 whitespace = false
 MD033 = false
 MD034 = false
+MD044 = false
 
 MD013.line_length = 200
 

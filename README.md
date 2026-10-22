@@ -31,6 +31,8 @@ What did you configure, write, or automate?
 
 1. Created a **.htmlhintrc** configuration file to run quality checks on HTML files
 2. Created a **config.toml** configuration file for markdownlint and ran it over a directory of Markdown files. Output the results to **markdownLintOutput.txt**
+	- `markdownlint .\my-website\ --output markdownLintOutput.txt`
+	- I counted the number of lines/errors in the file in PowerShell using `(Get-Content markdownLintOutput.txt).Count`
 3. Created a custom check rule for markdownlint-cli2
 4. Created a pre-commit script to automatically run linters before every commit
 
