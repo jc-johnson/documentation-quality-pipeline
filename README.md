@@ -33,9 +33,11 @@ What did you configure, write, or automate?
 2. Created a **config.toml** configuration file for markdownlint and ran it over a directory of Markdown files. Output the results to **markdownLintOutput.txt**
 	- `markdownlint .\my-website\ --output markdownLintOutput.txt`
 	- I counted the number of lines/errors in the file in PowerShell using `(Get-Content markdownLintOutput.txt).Count`
-3. Created a custom check rule for markdownlint-cli2
+3. Created a custom check rule for markdowncli and markdownlint-cli2
+	- required to import `markdown-it`
+		- `npm install markdown-it`
+	- [Markdownlint Versions](https://www.npmjs.com/package/markdownlint?activeTab=versions)
 4. Created a pre-commit script to automatically run linters before every commit
-
 
 **Validation:** 
 

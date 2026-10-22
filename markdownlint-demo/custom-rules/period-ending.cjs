@@ -9,7 +9,7 @@ module.exports = [
     description:
       "Require every non-heading, non-blank line to end with a period",
     information: new URL(
-      "https://github.com/DavidAnson/markdownlint/blob/v0.41.1/test/rules/any-blockquote.cjs"
+      "https://github.com/jc-johnson/documentation-quality-pipeline/blob/develop/markdownlint-demo/custom-rules/period-ending.cjs"
     ),
     tags: ["punctuation", "style"],
 
