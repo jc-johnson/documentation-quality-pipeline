@@ -12,6 +12,7 @@ The automated CI/CD pipelines allow these quality tests to run each time a chang
 I chose the following tools for this project:
 
 - [HTMLHint](https://htmlhint.com/getting-started/)
+	- https://www.npmjs.com/package/markdownlint/v/0.42.0
 - [markdownlint](https://github.com/DavidAnson/markdownlint/blob/v0.41.1/README.md)
 - [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
 - [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2)

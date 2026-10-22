@@ -1,10 +1,10 @@
 "use strict";
 
-const { markdownlint } = require("markdownlint");
+const { lint } = require("markdownlint/sync");
 const assert = require("node:assert/strict");
 const periodEnding = require("../custom-rules/period-ending.cjs");
 
-const results = markdownlint.sync({
+const results = lint({
   strings: {
     "example.md": [
       "# Installation",
