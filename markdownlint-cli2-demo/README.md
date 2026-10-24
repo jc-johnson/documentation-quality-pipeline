@@ -1,5 +1,9 @@
 # Intro
-This is my repository that holds [Markdown](https://www.markdownguide.org/) files of my user guides to be generated using [Docusaurus](https://docusaurus.io/docs).
+This is my repository that holds 
+
+- [Markdown](https://www.markdownguide.org/) files of my user guides I generated using [Docusaurus](https://docusaurus.io/docs).
+
+- Linting configuration files and rules used with [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2)
 
 ## Deploy Instructions
 1. Install [Docusaurus](https://docusaurus.io/docs) and [Node JS](https://nodejs.org/en).
@@ -12,7 +16,13 @@ This is my repository that holds [Markdown](https://www.markdownguide.org/) file
 Install [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) as a global CLI 
 	**npm install markdownlint-cli2 --global**
 
-Run markdownlint-cli2 *.{md,markdown} to lint all Markdown files in the current directory.
-	Run markdownlint-cli2 "*.{md,markdown}" to do the above in PowerShell.
+Run `markdownlint-cli2 *.{md,markdown}` to lint all Markdown files in the current directory.
+	Run `markdownlint-cli2 "*.{md,markdown}"` to do the above in PowerShell.
 	
 Note: Glob expressions in markdownlint-cli2 are pattern-matching strings powered by the globby library used to select or ignore Markdown files for linting
+
+Custom rules are held in /custom-rules
+
+Markdown files held in /my-website
+
+Configuration file for markdownlint-cli2 is .markdownlint.yaml

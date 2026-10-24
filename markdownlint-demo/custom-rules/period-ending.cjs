@@ -1,5 +1,3 @@
-// @ts-check
-
 "use strict";
 
 /** @type {import("markdownlint").Rule[]} */

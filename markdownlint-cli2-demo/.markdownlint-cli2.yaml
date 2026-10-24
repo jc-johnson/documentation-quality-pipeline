@@ -1,0 +1,6 @@
+config: {}
+
+customRules:
+  - ./custom-rules/period-ending.cjs
+
+showFound: true
