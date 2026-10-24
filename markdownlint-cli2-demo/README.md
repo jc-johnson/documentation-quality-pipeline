@@ -21,8 +21,15 @@ Run `markdownlint-cli2 *.{md,markdown}` to lint all Markdown files in the curren
 	
 Note: Glob expressions in markdownlint-cli2 are pattern-matching strings powered by the globby library used to select or ignore Markdown files for linting
 
-Custom rules are held in /custom-rules
+Run `node lint.js` to run linter with custom rules
 
-Markdown files held in /my-website
+## Important Files/Directories
 
-Configuration file for markdownlint-cli2 is .markdownlint.yaml
+- Custom rules are held in /custom-rules
+
+- Markdown files are held in /my-website
+
+- Configuration file for **markdownlint-cli2** is **.markdownlint-cli2.yaml**
+
+- Lint.js is the main file that runs the linter and ouputs findings to **lint-report.txt**
+
