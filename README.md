@@ -11,16 +11,24 @@ The automated CI/CD pipelines allow these quality tests to run each time a chang
 
 I chose the following tools for this project:
 
+Linting:
 - [HTMLHint](https://htmlhint.com/getting-started/)
 	- https://www.npmjs.com/package/markdownlint/v/0.42.0
 - [markdownlint](https://github.com/DavidAnson/markdownlint/blob/v0.41.1/README.md)
 - [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
 - [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2)
-- Vale 
+- [Vale](https://docs.vale.sh/) 
+	[Vale Tech Stack](https://docs.vale.sh/#tech-stack)
+
+Note: The above linting tools are all prevalent ways to complete quality checks. I wanted to include both HTML and Markdown linters since those are the two most prominent ways of publishing documentation. 
+	
+Automation:
 - GitHub CI
 - [pre-commit](https://pre-commit.com/)
 
-The above linting tools are all prevalent ways to complete quality checks. I wanted to include both HTML and Markdown linters since those are the two most prominent ways of publishing documentation. 
+Data Visualization:
+- [pandas](https://pandas.pydata.org/docs/getting_started/overview.html)
+- [Streamlit](https://streamlit.io/)
 
 **Architecture:** 
 
@@ -34,11 +42,13 @@ What did you configure, write, or automate?
 2. Created a **config.toml** configuration file for markdownlint and ran it over a directory of Markdown files. Output the results to **markdownLintOutput.txt**
 	- `markdownlint .\my-website\ --output markdownLintOutput.txt`
 	- I counted the number of lines/errors in the file in PowerShell using `(Get-Content markdownLintOutput.txt).Count`
-3. Created a custom check rule for markdowncli and markdownlint-cli2
+3. Created a custom check rule for markdowncli and markdownlint-cli2 that required all non-heading lines to end with a period in accordance to a style guide.
 	- required to import `markdown-it`
 		- `npm install markdown-it`
 	- [Markdownlint Versions](https://www.npmjs.com/package/markdownlint?activeTab=versions)
-4. Created a pre-commit script to automatically run linters before every commit
+4. Created a vale **.vale.ini** configuration file and linted a directory against the styles contained in the file. 
+
+Created a pre-commit script to automatically run linters before every commit
 
 **Validation:** 
 
