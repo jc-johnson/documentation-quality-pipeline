@@ -1,13 +1,16 @@
 # documentation-quality-pipeline
-Documentation Quality Check Pipeline - HTMLHint, markdownlint-cli2, Vale, GitLab & GitHub CI/CD, failure demonstrations, quality report.
 
-##Business problem##
+This repository is a proof-of-concept for various tools including: HTMLHint, markdownlint-cli2, Vale, GitLab & GitHub CI/CD. 
+
+The goal is to use the above quality assurance tools for documentation and use them to identify and resolve style errors, capture relevant metrics and display them in a dashboard.
+
+## Business Problem
 
 Linting allows for quality assurance testing in documentation and prevents issues such as gramatical errors and formatting errors from being published. This enhances user experience and increases brand image. 
 
 The automated CI/CD pipelines allow these quality tests to run each time a change is pushed to Git.
 
-##Approach##
+## Approach
 
 I chose the following tools for this project:
 
@@ -30,11 +33,11 @@ Data Visualization:
 - [pandas](https://pandas.pydata.org/docs/getting_started/overview.html)
 - [Streamlit](https://streamlit.io/)
 
-##Architecture##
+## Architecture
 
 How does data or content flow through the system?
 
-##Implementation##
+## Implementation
 
 What did you configure, write, or automate?
 
@@ -50,7 +53,7 @@ What did you configure, write, or automate?
 
 Created a pre-commit script to automatically run linters before every commit
 
-##Validation##
+## Validation
 
 How did you test that it works?
 - Created a file with initial errors that violated linting rules. 
@@ -58,17 +61,17 @@ How did you test that it works?
 - Fixed the errors in the html or markdown files.
 - Reran the linter and verified there were no errors being thrown. 
 
-##Results##
+## Results
 
 What did you measure or verify?
 
 Verified that errors thrown can be automatically be caught before pushing changes to git. Reducing the chances of errors being published to Git. 
 
-##Limitations##
+## Limitations
 
 What does your evidence not establish?
 
-##Reproduction##
+## Reproduction
 
 How can someone run or review the project?
 
@@ -78,5 +81,6 @@ npm install markdownlint --save-dev
 npm install -g markdownlint-cli
 npm install markdownlint-cli2 --global
 
-##Deliverable##
+## Deliverable
+
 Demonstrate a failing CI job due to quality errors in documentation, followed by a passing job due to the resolved quality fixes. 
