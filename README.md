@@ -49,7 +49,13 @@ What did you configure, write, or automate?
 	- required to import `markdown-it`
 		- `npm install markdown-it`
 	- [Markdownlint Versions](https://www.npmjs.com/package/markdownlint?activeTab=versions)
-4. Created a vale **.vale.ini** configuration file and linted a directory against the styles contained in the file. 
+
+### Vale
+- Created a vale **.vale.ini** configuration file and linted a directory against the styles contained in the file. 
+- Linted a directory of Markdown files using 
+	- `vale sync`
+	- `vale /my-website/blog`
+
 
 Created a pre-commit script to automatically run linters before every commit
 
